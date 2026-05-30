@@ -56,8 +56,6 @@ function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
 }
 
 async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-  let attachment;
-
   event.preventDefault();
 
   if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
